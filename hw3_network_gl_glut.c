@@ -50,7 +50,7 @@ void draw2(void){
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	/********************************************/
-    //nodelari çiz
+    //nodelari Ã§iz
 	glPointSize(4.0f);
 	glBegin(GL_POINTS);
 	for(int i=0;i<n.size();i++){
@@ -187,7 +187,7 @@ void _delete(){
 		   selected_node = -1;
 	       return;
 		 }
-		 for(int t=0 ; t<n.size();t++)   //kendisine komsu olanlarýda siler
+		 for(int t=0 ; t<n.size();t++)   //kendisine komsu olanlarÃ½da siler
 			  for(int r=0; r < (n[t]->e.size());r++)
 				  if(n[t]->e[r] == selected_node){
 					  n[t]->e.erase(n[t]->e.begin() + r);
@@ -220,7 +220,7 @@ void keybord(unsigned char key,int x ,int y){
 int main(int argc , char** argv){
     
 	glutInit(&argc,argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB); //bunu kullandýgým için swap buffer demem lazým geldi
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB); //bunu kullandÃ½gÃ½m iÃ§in swap buffer demem lazÃ½m geldi
 	glutInitWindowSize(width,height);
 	glutCreateWindow("Hw3");
     glutDisplayFunc(draw2);
