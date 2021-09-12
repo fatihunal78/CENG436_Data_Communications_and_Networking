@@ -1,0 +1,3 @@
+all:
+	gcc -o client newclient.c -lsocket -lnsl
+	gcc -o server newserver.c -lsocket -lpthread -lnsl
